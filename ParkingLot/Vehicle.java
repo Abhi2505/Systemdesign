@@ -2,6 +2,7 @@ package com.SystemDesign.ParkingLot;
 
 public class Vehicle {
     private String vehicleNumber;
+    private VehicleSize vehicleSize;
 
     public String getVehicleNumber() {
         return vehicleNumber;
@@ -19,7 +20,7 @@ public class Vehicle {
         this.vehicleSize = vehicleSize;
     }
 
-    private VehicleSize vehicleSize;
+
 
     public Vehicle(String vehicleNumber, VehicleSize vehicleSize) {
         this.vehicleNumber = vehicleNumber;
