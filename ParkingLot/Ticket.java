@@ -5,6 +5,9 @@ import java.util.Date;
 public class Ticket {
     private int slotNumber;
     private String VechileNumber;
+    private VehicleSize  vehicleSize;
+    private Date date;
+
 
     public int getSlotNumber() {
         return slotNumber;
@@ -55,7 +58,5 @@ public class Ticket {
                 '}';
     }
 
-    private VehicleSize  vehicleSize;
-    private Date date;
 
 }

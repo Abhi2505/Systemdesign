@@ -10,6 +10,7 @@ public class ParkingLot implements Parking{
         this.fourWheelerSlot=new ArrayList<>();
         this.twoWheelerSlot=new ArrayList<>();
     }
+//here we have used singleton design pattern
     public static ParkingLot getParkingLot(){
         if(parkingLot==null)
             parkingLot=new ParkingLot();
@@ -99,6 +100,6 @@ public class ParkingLot implements Parking{
                 }
             }
         }
-            throw new InvalidVehicleException("Two wheeler vehicle with reg no "+vehicleNumber +" not found ");
+        throw new InvalidVehicleException("Two wheeler vehicle with reg no "+vehicleNumber +" not found ");
     }
 }
